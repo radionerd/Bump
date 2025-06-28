@@ -1,8 +1,8 @@
 # Bump Wavefile generator
 
-This mini project was conceived for testing a Yamaha Stagepas300 amplifier that cuts out during music performances at seemingly random times.
+This mini project was conceived for testing a faulty Yamaha Stagepas300 amplifier that cuts out during music performances at seemingly random times.
 
-It was discovered that sometimes a severe bump on a microphone input would make the amplifier fail. I hate to bump expensive microphones hard, so this project creates a wave file that simulates a microphone bump. A rapidly decaying 64.5Hz waveform.
+It was discovered eventually that sometimes a severe bump on a microphone input would make the amplifier fail. I hate to bump expensive microphones hard, so this project creates a wave file that simulates a hard microphone bump. A rapidly decaying 64.5Hz waveform.
 
 <img src="bump.svg" style="height: 480px; width:600px;"/>
 
