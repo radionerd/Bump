@@ -1,7 +1,7 @@
 bump.wav: bumpwrite
 	./bumpwrite
 	
-bump.svg: bump.dat
+bump.svg: bump.dat gnuplot.cmd
 	gnuplot "gnuplot.cmd"
 	
 bump.dat: bump.wav
