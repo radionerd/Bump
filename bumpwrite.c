@@ -257,6 +257,9 @@ int main(void)
     /*Fill the buffer*/
     uint32_t FrameOffset = 0;
     int bumps = 10;
+    ret = generate_bump ( frequency, 0.0           , 0.0            , decay_rate, 
+                          SAMPLE_RATE, FrameCount/bumps, FrameOffset+ buffer_p);
+    FrameOffset += FrameCount/bumps;
     ret = generate_bump ( frequency, amplitude_left, amplitude_right, decay_rate, 
                           SAMPLE_RATE, FrameCount/bumps, FrameOffset+buffer_p);
     FrameOffset += FrameCount/bumps;
@@ -279,9 +282,6 @@ int main(void)
                           SAMPLE_RATE, FrameCount/bumps, FrameOffset+ buffer_p);
     FrameOffset += FrameCount/bumps;
     ret = generate_bump ( frequency, 0.0           ,-amplitude_right, decay_rate, 
-                          SAMPLE_RATE, FrameCount/bumps, FrameOffset+ buffer_p);
-    FrameOffset += FrameCount/bumps;
-    ret = generate_bump ( frequency, 0.0           , 0.0            , decay_rate, 
                           SAMPLE_RATE, FrameCount/bumps, FrameOffset+ buffer_p);
     FrameOffset += FrameCount/bumps;
     ret = generate_bump ( frequency, 0.0           , 0.0            , decay_rate, 
