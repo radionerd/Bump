@@ -13,7 +13,7 @@ bumpwrite: bumpwrite.c
 .PHONY: clean
 
 clean:
-	rm -f wavwrite bumpwrite bump.wav bump.dat sawtooth_test.wav 
+	rm -f bumpwrite bump.wav bump.dat bump.svg
 	
 firefox: bump.svg
 	firefox file:///home/richard/Projects/Bump/bump.svg
